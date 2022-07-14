@@ -12,6 +12,14 @@ menuPrincipal = do
     putStrLn("[3] Cadastro")
     putStrLn("[4] Sair\n")
 
+menuCadastro :: IO ()
+menuCadastro = do
+    putStrLn("\n           -----MENU PRINCIPAL-----")
+    putStrLn("\nComo deseja prosseguir?")
+    putStrLn("[1] Cadastro de empresa")
+    putStrLn("[2] Cadastro de usuária comum")
+    putStrLn("[3] Sair\n")
+
 opcaoInvalida :: IO()
 opcaoInvalida = do
      putStrLn("\nError: OPÇÃO INVÁLIDA\n")

@@ -11,5 +11,6 @@ main = do
 
 escolheOpcao :: String -> IO()
 escolheOpcao opcao | opcao == "1" = Login.login main
+              | opcao == "3" = Login.cadastro main
 				     | otherwise = do {Mensagens.opcaoInvalida; main}
 
