@@ -34,5 +34,16 @@ cadastroEmpresa :: (IO()) -> IO()
 cadastroEmpresa menu = do
         Mensagens.senhaParaLogin
 
+redefinirSenha :: (IO()) -> IO()
+redefinirSenha menu = do
+  Mensagens.emailParaRedefinirSenha
+  email <- Util.lerEntradaString
+  Mensagens.novaSenha
+  senha <- Util.lerEntradaString
+  Mensagens.senhaRedefinida
+  do {  Mensagens.senhaRedefinida; menu}
+
+
+
     
 

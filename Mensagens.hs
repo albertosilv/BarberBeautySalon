@@ -32,6 +32,18 @@ senhaParaLogin :: IO()
 senhaParaLogin = do
     putStr("\nInforme sua senha para fazer o login: ")
 
+emailParaRedefinirSenha :: IO()
+emailParaRedefinirSenha = do
+    putStr("\nInforme seu email para redefinir Senha: ")
+
+novaSenha :: IO()
+novaSenha = do
+      putStr("\nInforme sua nova senha: ")
+
+senhaRedefinida :: IO()
+senhaRedefinida = do
+      putStr("\n SENHA REDEFINIDA COM SUCESSO !! ")
+
 cadastradoEfetuado :: IO()
 cadastradoEfetuado = do
     putStr("\nCADASTRADO EFETUADO COM SUCESSO!")
